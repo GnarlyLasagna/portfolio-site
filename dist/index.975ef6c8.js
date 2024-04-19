@@ -584,11 +584,14 @@ var _scrollReveal = require("./scripts/scrollReveal");
 var _scrollRevealDefault = parcelHelpers.interopDefault(_scrollReveal);
 var _tiltAnimation = require("./scripts/tiltAnimation");
 var _tiltAnimationDefault = parcelHelpers.interopDefault(_tiltAnimation);
+var _azureCloudCounter = require("./scripts/azureCloudCounter");
+var _azureCloudCounterDefault = parcelHelpers.interopDefault(_azureCloudCounter);
 var _scrollRevealConfig = require("./data/scrollRevealConfig");
+(0, _azureCloudCounterDefault.default)();
 (0, _scrollRevealDefault.default)((0, _scrollRevealConfig.targetElements), (0, _scrollRevealConfig.defaultProps));
 (0, _tiltAnimationDefault.default)();
 
-},{"./scripts/scrollReveal":"54rka","./scripts/tiltAnimation":"72kAb","./data/scrollRevealConfig":"5aORV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"54rka":[function(require,module,exports) {
+},{"./scripts/scrollReveal":"54rka","./scripts/tiltAnimation":"72kAb","./data/scrollRevealConfig":"5aORV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./scripts/azureCloudCounter":"kIfQ8"}],"54rka":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>initScrollReveal);
@@ -1028,6 +1031,13 @@ const targetElements = [
         }
     },
     {
+        element: ".hero-counter",
+        animation: {
+            delay: 800,
+            origin: window.innerWidth > 768 ? "left" : "bottom"
+        }
+    },
+    {
         element: ".hero-cta",
         animation: {
             delay: 800,
@@ -1070,6 +1080,35 @@ const targetElements = [
         }
     }
 ];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kIfQ8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>initCloudCounter);
+function initCloudCounter() {
+    window.addEventListener("DOMContentLoaded", (event)=>{
+        getVisitCount();
+    });
+    const functionApiUrl = "https://edportfoliofuncpy.azurewebsites.net/api/HttpTrigger";
+    const getVisitCount = ()=>{
+        let count = 0;
+        fetch(functionApiUrl).then((response)=>{
+            return response.json();
+        }).then((response)=>{
+            console.log(response.count);
+            count = response.count;
+            //        document.getElementById("cloud-counter").innerText = `This page has been visited ${count} times`;
+            const element = document.getElementById("cloud-counter");
+            // Modify the text inside the element
+            element.innerText = `This page has been visited ${count} times`;
+            // Add a class to the element
+            element.classList.add("your-class-name");
+        }).catch(function(error) {
+            console.log(error);
+        });
+        return count;
+    };
+}
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["4rkIz","8lqZg"], "8lqZg", "parcelRequire6aa4")
 

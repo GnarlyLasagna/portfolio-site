@@ -22,6 +22,14 @@ export const targetElements = [
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
+    {
+    element: ".hero-counter",
+    animation: {
+      delay: 800,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+
   {
     element: ".hero-cta",
     animation: {
