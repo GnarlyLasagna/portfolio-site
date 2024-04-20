@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "frontend/**"
+      - "**"
 
 jobs:
   build:
@@ -23,13 +23,13 @@ jobs:
         with:
           azcliversion: 2.30.0
           inlineScript: |
-            az storage blob upload-batch --account-name cloudresumesite -d '$web' -s frontend/
+            az storage blob upload-batch --account-name dolatowskifestorage -d '$web' -s .
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
         with:
           azcliversion: 2.30.0
           inlineScript: |
-            az cdn endpoint purge --content-paths  "/*" --profile-name "CloudResumeChallengeGPS" --name "gpsazuresume" --resource-group "cloud-resume-challenge-rg"
+            az cdn endpoint purge --content-paths  "/*" --profile-name "fe-cdn" --name "fe-cdn.azureedge.net" --resource-group "resume-front-end"
 
       # Azure logout
       - name: logout
