@@ -1,26 +1,25 @@
-name: deploy_frontend
-# Deploys when push is made from frontend folder
 
+name: Deploy Frontend
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - "**"
-
+      - "dist/**"
+      - "src/**"
+      - "package.json"
+      - "package-lock.json"  # Ensure this triggers the workflow to consider dependency changes
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # specify the node version
-
-      - name: Install Parcel
-        run: npm install parcel@latest
+          node-version: '16'  # Specify your project's required Node.js version, ensuring compatibility
 
       - name: Install dependencies
         run: npm install
@@ -28,7 +27,7 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: login with azure
+      - name: Login with Azure
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
@@ -38,14 +37,13 @@ jobs:
         with:
           inlineScript: |
             az storage blob upload-batch --account-name dolatowskifestorage -d '$web' -s dist/
+
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
         with:
           inlineScript: |
             az cdn endpoint purge --content-paths "/*" --profile-name fe-cdn --name fe-cdn.azureedge.net --resource-group portfolio-front-end
 
-      - name: logout
-        run: |
-          az logout
-
+      - name: Logout
+        run: az logout
 
