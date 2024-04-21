@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": ""
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Evan Dolatowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.11.0",
