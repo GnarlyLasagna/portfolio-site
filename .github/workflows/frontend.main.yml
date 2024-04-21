@@ -1,23 +1,21 @@
-name: deploy_frontend
-# Deploys when push is made from frontend folder
-
-on:
-  workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "dist/**"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Specify the Node.js version here
+      - name: Install dependencies
+        run: npm install
+      - name: Build project
+        run: npm run build
       - name: login with azure
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
       - name: Upload to blob storage
         uses: azure/CLI@v1
         with:
@@ -28,8 +26,7 @@ jobs:
         with:
           inlineScript: |
             az cdn endpoint purge --content-paths "/*" --profile-name fe-cdn --name fe-cdn.azureedge.net --resource-group portfolio-front-end
-
-      # Azure logout
       - name: logout
         run: |
           az logout
+
