@@ -15,9 +15,6 @@
   "keywords": [],
   "author": "Evan Dolatowski",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
