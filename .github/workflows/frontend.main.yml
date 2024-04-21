@@ -8,23 +8,31 @@ on:
     paths:
       - "**"
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: '16' # Specify the Node.js version here
+          node-version: '16'  # specify the node version
+
+      - name: Install Parcel
+        run: npm install parcel@latest
+
       - name: Install dependencies
         run: npm install
-      - name: Build project
+
+      - name: Build the project
         run: npm run build
+
       - name: login with azure
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Upload to blob storage
         uses: azure/CLI@v1
         with:
@@ -35,7 +43,9 @@ jobs:
         with:
           inlineScript: |
             az cdn endpoint purge --content-paths "/*" --profile-name fe-cdn --name fe-cdn.azureedge.net --resource-group portfolio-front-end
+
       - name: logout
         run: |
           az logout
+
 
