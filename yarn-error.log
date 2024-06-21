@@ -1,0 +1,57 @@
+Arguments: 
+  /Users/evandolatowski/.nvm/versions/node/v18.20.3/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/evandolatowski/.pyenv/plugins/pyenv-virtualenv/shims:/Users/evandolatowski/.pyenv/shims:/Users/evandolatowski/.nvm/versions/node/v18.20.3/bin:/Users/evandolatowski/.pyenv/bin:/Users/evandolatowski/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Users/evandolatowski/Library/Android/sdk/emulator:/Users/evandolatowski/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.20.3
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/evandolatowski/Documents/js/portfolio-site/node_modules/css-tree/lib/common'
+
+npm manifest: 
+  {
+    "name": "portfolio",
+    "version": "1.0.1",
+    "private": "true",
+    "description": "A portfolio website",
+    "source": "src/index.html",
+    "scripts": {
+      "start": "parcel",
+      "build": "parcel build src/index.html --dist-dir ./dist"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "keywords": [],
+    "author": "Evan Dolatowski",
+    "license": "ISC",
+    "homepage": "",
+    "devDependencies": {
+      "@parcel/transformer-sass": "^2.11.0",
+      "parcel": "^2.11.0",
+      "prettier": "^2.8.1"
+    },
+    "dependencies": {
+      "@parcel/watcher": "^2.4.1",
+      "@popperjs/core": "^2.11.6",
+      "bootstrap": "^5.2.3",
+      "jquery": "^3.6.3",
+      "popper.js": "^1.16.1",
+      "vanilla-tilt": "^1.8.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  
