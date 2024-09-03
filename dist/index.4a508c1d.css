@@ -13602,8 +13602,8 @@ section {
   background: #fff;
   border-bottom: 0;
   align-items: center;
-  height: 100vh;
-  min-height: 100vh;
+  height: 25vh;
+  min-height: 25vh;
   margin-bottom: 0;
   padding: 0 5.6rem;
   font-weight: 400;
