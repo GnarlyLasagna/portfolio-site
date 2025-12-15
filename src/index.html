@@ -13,6 +13,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
+<style>
+  .blog-grid {
+    display: block;
+    gap: 24px;
+  }
+
+  @media (min-width: 513px) {
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+  }
+</style>
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
@@ -102,6 +116,8 @@
     </a>
 </div>
 
+    <section id="projects">
+      <div class="container">
   <section class="about-wrapper__image load-hidden" style="max-width: 1100px; margin: 60px auto; padding: 0 20px;">
   <h1 style="
     margin-bottom: 10px;
@@ -121,11 +137,7 @@
   A Series of Blog Posts I made while building my Virtual Home Lab for Networking and Cyber Security Research
   </p>
 
-  <div style="
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  ">
+  <div class="blog-grid">
 
     <!-- Blog Card 1 -->
     <article style="
@@ -238,7 +250,9 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
     </article>
   </div>
 </section>
-
+      </div >
+</section >
+ 
 
 
     <section id="projects">

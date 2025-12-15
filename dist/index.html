@@ -10,6 +10,20 @@
     <meta name="description" content="Evan Dolatowski | Developer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/index.4a508c1d.css">
+<style>.blog-grid {
+  gap: 24px;
+  display: block;
+}
+
+@media (width >= 513px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    display: grid;
+  }
+}
+
+</style>
     <script defer="" src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
   <body>
@@ -83,7 +97,8 @@
     </a>
 </div>
 
-
+    <section id="projects">
+      <div class="container">
   <section class="about-wrapper__image load-hidden" style="max-width: 1100px; margin: 60px auto; padding: 0 20px">
   <h1 style="text-align: center; margin-bottom: 10px">
     Security Labs & Technical Writing
@@ -93,7 +108,7 @@
   A Series of Blog Posts I made while building my Virtual Home Lab for Networking and Cyber Security Research
   </p>
 
-  <div style="grid-template-columns: repeat(2, 1fr); gap: 24px; display: grid">
+  <div class="blog-grid">
 
     <!-- Blog Card 1 -->
     <article style="background-color: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 24px; box-shadow: 0 6px 18px #0000000a">
@@ -146,7 +161,9 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
     </article>
   </div>
 </section>
-
+      </div>
+</section>
+ 
 
 
     <section id="projects">
