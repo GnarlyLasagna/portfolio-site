@@ -13,20 +13,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
-<style>
-  .blog-grid {
-    display: block;
-    gap: 24px;
-  }
-
-  @media (min-width: 500px) {
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-    }
-  }
-</style>
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
@@ -46,6 +32,8 @@
     </p>
   </div>
 </header>
+    <!-- **** Hero Section **** -->
+   <!-- /END Hero Section -->
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
@@ -57,8 +45,7 @@
                 alt="Profile Image"
                 class="img-fluid rounded shadow-lg"
                 height="auto"
-                border-radius="50"
-                width="500px"
+                width="300px"
                 src="assets/profile.jpg"
                 alt="Profile Image"
               />
@@ -66,8 +53,10 @@
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
+
               <!--  <p class="about-wrapper__info-text">
              <!--   <p class="mb-4"><b>---Working Remotely As a Fullstack Developer---</b></p> -->
+
               <p class="about-wrapper__info-text">
                 I’m a former <b>full stack developer</b> turned <b>cybersecurity student</b> with a strong foundation in software engineering and system design. I began my career at <b>OneReach.AI</b> in 2022, where I improved backend efficiency and frontend performance for clients like <b>McGraw Hill</b> and <b>Athena Health</b> using Node.js, PostgreSQL, and Vue.js.
                    </p> 
@@ -114,8 +103,8 @@
         <img src="./assets/comptia-security-plus.png" alt="CompTIA Security+" style="width: 100px; height: auto;">
     </a>
 </div>
-    <section id="projects">
-      <div class="container">
+
+
   <section class="about-wrapper__image load-hidden" style="max-width: 1100px; margin: 60px auto; padding: 0 20px;">
   <h1 style="
     margin-bottom: 10px;
@@ -134,7 +123,13 @@
   ">
   A Series of Blog Posts I made while building my Virtual Home Lab for Networking and Cyber Security Research
   </p>
-  <div class="blog-grid">
+
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  ">
+
     <!-- Blog Card 1 -->
     <article style="
       border: 1px solid #e0e0e0;
@@ -145,7 +140,6 @@
     ">
  <a href="https://dev.to/gnarlylasagna/building-a-virtualized-cybersecurity-lab-networking-and-pfsense-setup-4bml"
          target="_blank"
-      class="cta-btn cta-btn--hero"
          style="
            display: inline-block;
            margin-top: 10px;
@@ -157,6 +151,7 @@
         Building a Virtualized Cybersecurity Lab: Networking and pfSense Setup
       </h3>
       </a>
+          <hr>
       <p style="font-size: 15px; line-height: 1.6; color: #555;">
             Planning the Overall Network. Creating Network Segmentation, Installing and configuring pfSense as my Virtual Network Router Firewall and DHCP Server
       </p>
@@ -173,7 +168,6 @@
     ">
 <a href="https://dev.to/gnarlylasagna/building-a-virtualized-cybersecurity-lab-active-directory-and-dns-integration-cn6"
          target="_blank"
-      class="cta-btn cta-btn--hero"
          style="
            display: inline-block;
            margin-top: 10px;
@@ -185,6 +179,7 @@
         Building a Virtualized Cybersecurity Lab: Active Directory and DNS Integration
       </h3>
       </a>
+          <hr>
       <p style="font-size: 15px; line-height: 1.6; color: #555;">
             Creating and Installing Windows 11 and Windows Server 2022 VMs. Configuring Active Directory then linking both Windows VMs and Ubuntu Desktop VM to AD
       </p>
@@ -200,7 +195,6 @@
     ">
 <a href="https://dev.to/gnarlylasagna/building-a-virtualized-cybersecurity-lab-splunk-siem-setup-and-log-forwarding-4k14"
          target="_blank"
-      class="cta-btn cta-btn--hero"
          style="
            display: inline-block;
            margin-top: 10px;
@@ -212,6 +206,7 @@
         Building a Virtualized Cybersecurity Lab: Splunk SIEM Setup and Log Forwarding
       </h3>
       </a>
+          <hr>
       <p style="font-size: 15px; line-height: 1.6; color: #555;">
             Installing Splunk on Ubuntu server, then configuring Log Forwarding on Windows 11, Windows Server2022, Ubuntu Desktop, and pfSense
       </p>
@@ -225,9 +220,8 @@
       background-color: #ffffff;
       box-shadow: 0 6px 18px rgba(0,0,0,0.04);
     ">
- <a href="https://dev.to/gnarlylasagna/building-a-virtualized-cybersecurity-lab-introducing-an-adversary-with-kali-linux-32ab"
+ <a href="https://dev.to/YOUR_LINK"
          target="_blank"
-      class="cta-btn cta-btn--hero"
          style="
            display: inline-block;
            margin-top: 10px;
@@ -236,19 +230,18 @@
            text-decoration: none;
          ">
       <h3 style="margin-top: 0; font-size: 20px;">
-Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Linux
+        Building a Virtualized Cybersecurity Lab: Connecting An Attack Machine To The Network by VPN
       </h3>
       </a>
+          <hr>
       <p style="font-size: 15px; line-height: 1.6; color: #555;">
-            Creating the Kali Linux Attack Machine and interacting with the Virtual Home Lab Network to display overall connectivity, interactivity, logging and concluding this Robust Lab Project
+            Configuring an Open VPN Server on pfSense, Exporting Secure Credentials and Connecting a Kali Linux Laptop to my new Virtual Network Lab
       </p>
      
     </article>
   </div>
 </section>
-      </div >
-</section >
- 
+
 
 
     <section id="projects">
@@ -262,6 +255,7 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
                 <h3 class="project-wrapper__text-title">Fullstack MERN Application</h3>
                 <div>
                   <p class="mb-4">
+                  This is a Create, Read, Update, Delete app created with the MERN stack, which includes MongoDb, ExpressJS, ReactJS, and NodeJS.
                   I wrote the frontend and backend of this app in the first two weeks of 2024. This was my first time using a NoSQL Database instead of using postgreSQL.
                   </p>
                   <p class="mb-4">
