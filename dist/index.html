@@ -55,16 +55,17 @@
               <!--  <p class="about-wrapper__info-text">
              <!--   <p class="mb-4"><b>---Working Remotely As a Fullstack Developer---</b></p> -->
               <p class="about-wrapper__info-text">
-                I’m a former <b>full stack developer</b> turned <b>cybersecurity student</b> with a strong foundation in software engineering and system design. I began my career at <b>OneReach.AI</b> in 2022, where I improved backend efficiency and frontend performance for clients like <b>McGraw Hill</b> and <b>Athena Health</b> using Node.js, PostgreSQL, and Vue.js.
-                   </p> 
+
+  I’m a <b>former full-stack developer</b> turned <b>cybersecurity student</b>, bringing a strong foundation in <b>software engineering</b> and <b>system design</b> to security-focused projects. I began my career at <b>OneReach.AI</b> in 2022, improving <b>backend efficiency</b> and <b>frontend performance</b> for clients like <b>McGraw Hill</b> and <b>Athena Health</b> using <b>Node.js</b>, <b>PostgreSQL</b>, and <b>Vue.js</b>.
+</p>
               <p class="about-wrapper__info-text">
-                Now, I’m building on that technical background by pursuing a degree in cybersecurity at <b>Maryville University</b>, with about a year and a half left of school. My focus is shifting toward creating <b>secure systems</b> and hands-on cybersecurity projects that combine my development experience with modern <b>security practices</b>.
+  Now, as a <b>cybersecurity student at Maryville University</b>, I’m leveraging my development experience to build <b>secure systems</b> and <b>hands-on cloud security projects</b>. I’m passionate about understanding how <b>applications, networks, and data</b> can be both built and protected, and I’m eager to bridge the gap between <b>software development</b> and <b>cybersecurity</b> through practical, real-world projects.
               </p>
 
-              <p class="about-wrapper__info-text">
+<!--              <p class="about-wrapper__info-text">
                 I’m <b>passionate</b> about understanding how applications, networks, and data can be both built and protected—and I’m excited to continue bridging the gap between <b>software development</b> and <b>cybersecurity</b>.
               </p>
-
+-->
               <span class="d-flex mt-3">
                 <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="/assets/resume.pdf">
                   View Resume
@@ -94,7 +95,6 @@
         <img src="/comptia-security-plus.2d9c011c.png" alt="CompTIA Security+" style="width: 100px; height: auto">
     </a>
 </div>
-
   <section class="about-wrapper__image load-hidden" style="max-width: 1100px; margin: 60px auto; padding: 0 20px">
   <h1 style="text-align: center; margin-bottom: 10px">
     Security Labs & Technical Writing
@@ -152,13 +152,9 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
       <p style="color: #555; font-size: 15px; line-height: 1.6">
             Creating the Kali Linux Attack Machine and interacting with the Virtual Home Lab Network to display overall connectivity, interactivity, logging and concluding this Robust Lab Project
       </p>
-     
     </article>
   </div>
 </section>
- 
-
-
 
     <section id="projects">
       <div class="container">
@@ -259,74 +255,64 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
 </div> -->
           <!-- /END Project -->
 <!-- Notice: each .row is a project -->
-<!--          <div class="row">
+          <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Writing an Interpreter in Go</h3>
+                <h3 class="project-wrapper__text-title">CloudSentinel – Multi-Cloud Security Scanner</h3>
                 <div>
                   <p class="mb-4">
-                  By recommendation from a popular Programming Streamer The Primeagen and my appreciation for high quality
-                  educational books, I purchased <b>Writing an Interpreter In Go</b>
+Built a multi-cloud security tool that deploys intentionally vulnerable infrastructure across AWS, Azure, and GCP, then scans and reports real-world misconfigurations using a custom Python CLI.
                   </p>
                   <p class="mb-4">
-                  Following along with the book using Go I created an Interpreter for the Monkey Programming Language.
-                  </p>
-                  <h2><b>The book covers</b></h2>
-                  <p><b>Lexing</b>, creating the Lexer using Lexical Analysis, Defining our Tokens, and writing the Lexer along side of Tests to confirm the output</p>
-                  <p><b>Parsing</b>, starting with simpler tokens like "let" and "return" statements and then parsing complex expressions using Top Down Operator Precedence or <b>Pratt Parsing</b>.
-                  The most interesting part of this section is the handling of Prefix and Postfix operators, and handling the Order of Operations for properly parsing an expression like "3 + 4 -5 * 5" to be nested properly as "(3 + 4)((-5) * 5)"
-                  </p>
-                  <p><b>Evaluation</b>, we nearly have our REPL built. In this section we build a Tree Walking Interpreter, create our Object system, Evaluate expressions, Binding variables to the Environment and reflect on how lucky we are to have Garbage Collection handled by Go.</p>
+                  </p><hr>
+                  <br>
+                  <h2><b>What It Does</b></h2>
+                  <p><b>Deploys</b> vulnerable cloud infrastructure using Terraform</p>
+                  <p><b>Scans</b> for real-world security issues (open SSH, public storage, IAM risks)</p>
+                  <p><b>Aggregates</b> findings across AWS, Azure, and GCP</p>
+                  <p><b>Generates</b> structured reports (JSON + CSV)</p>
+                  <p><b>Cleans up</b> all resources and verifies nothing remains</p>
 
-                  <p><b>Extending the Interpreter</b>, now that we have a REPL we extend some capabilities of the Interpreter, this includes Arrays, Hash Maps, and adding built in functions.
-                  </p>
-                  <p>Expressed as a list of features, the Monkey language has the following:</p>
-                  <p>• C-like syntax</p>
-                  <p>• variable bindings</p>
-                    <p>• integers and booleans</p>
-                    <p>• arithmetic expressions</p>
-                    <p>• built-in functions</p>
-                    <p>• first-class and higher-order functions</p> 
-                    <p>• closures</p>
-                    <p>• a string data structure</p>
-                    <p>• an array data structure</p>
-                    <p>• a hash data structure</p>
+                  <hr>
+                  <br>
+                  <h2><b>Tech Stack</b></h2>
+                  <p><b>Python</b> - CLI + scanning engine</p>
+                  <p><b>Terraform</b> - Multi-cloud infrastructure</p>
+                  <p><b>AWS / Azure / GCP</b> - Cloud Enviroments</p>
+                  <p><b>Bash / CLI</b> - Tooling</p>
+                  <p><b>JSON / CSV</b> - Reporting</p>
+
+                  <hr>
+                  <br>
+                  <h2><b>Key Features</b></h2>
+                    <p>• Multi-cloud architecture with a unified scanning engine</p>
+                    <p>• Modular security checks (AWS, Azure, GCP separated cleanly)</p>
+                    <p>• Risk scoring system (weighted severity model)</p>
+                    <p>• Automated deployment → scan → report → destroy workflow</p>
+                    <p>• CLI tool built for real-world usability</p> 
+
+                  <hr>
+                  <br>
+                  <h2><b>Challenges & Lessons Learned</b></h2>
+                    <p>• Dealt with cloud provider inconsistencies (naming rules, regions, SKU availability)</p>
+                    <p>• Solved IAM and permission issues across AWS, Azure, and GCP</p>
+                    <p>• Designed a scalable scanning architecture across multiple providers</p>
+                    <p>• Built error handling and fail-fast logic for Terraform automation</p>
+                    <p>• Learned how real cloud misconfigurations are detected and reported</p>
+
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://github.com/GnarlyLasagna/Monkey-Interpreter/tree/main"
-                >
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/GnarlyLasagna/cloud-sentinel">
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://github.com/GnarlyLasagna/Monkey-Interpreter/tree/main" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.3"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/monkey1.png"
-                    />
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/monkey2.png"
-                    />
-                     <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/monkey3.png"
-                    />
+                <a rel="noreferrer" href="https://github.com/GnarlyLasagna/cloud-sentinel" target="_blank">
+                  <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.3" class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="/scan.0a87e35b.png">
+                    <img alt="Project Image" class="img-fluid" src="/destroy.cb3e501b.png">
+                     <img alt="Project Image" class="img-fluid" src="/status.81725f66.png">
  
                   </div>
 
@@ -334,58 +320,58 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
               </div>
             </div>
           </div>
--->
-          <!-- /END Project -->
  
 <!-- Notice: each .row is a project -->
- 
 
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Rest API built with Go</h3>
+                <h3 class="project-wrapper__text-title">Event Management API (Go)</h3>
                 <div>
+
+
+                     <p class="mb-4">
+                    Built a RESTful API in Go to handle user authentication and event management, focusing on secure backend design and API development fundamentals.
+                  </p>
                   <p class="mb-4">
-                  This is an API built using Go and SQLite3. I wanted to build a backend project using something different from Node.js and I really liked using Go previously for the Monkey Interpreter.
+                  </p><hr>
+                  <br>
+                  <h2><b>What It Does</b></h2>
+                  <p>User <b>authentication</b> with JWT tokens</p>
+                  <p><b>Secure</b> password storage using bcrypt</p>
+                  <p>• Full <b>CRUD</b> operations for event management</p>
+                  <p>• Protected routes with <b>role-based access</b> logic</p>
 
-                  </p><p><b>Libraries Used</b></p>
-                  <p>• Gin library which was very helpful for HTTP request routing.</p>
-                  <p>• jwt-go for Auth tokens in requests to verify users.</p>
-                  <p>• bcrypt for encrypting and decrypting passwords stored in the SQL DataBase.</p>
-                  <p>• go-sqlite3 for running the SQL server.</p>
+                  <hr>
                   <br>
-                  <h2><b>API Requests Supported</b></h2>
-                  <br>
-                  <h3><b>GET Requests</b></h3>
-                  <p style="text-indent: 15px"><b>api/events </b></p>
-                  <p style="text-indent: 30px">• Get a list of available events</p>
-                  <p style="text-indent: 15px"><b>api/events/21</b></p>
-                  <p style="text-indent: 30px">• Get a specific event based on ID</p>
-                  <br>
-                  <h3><b>POST Requests</b></h3>
-                  <p style="text-indent: 15px"><b>api/events (Auth Required)</b></p>
-                  <p style="text-indent: 30px">• Create bookable event</p>
-                  <p style="text-indent: 15px"><b>api/signup</b></p>
-                  <p style="text-indent: 30px">• Create a new user</p>
-                  <p style="text-indent: 15px"><b>api/login (Returns Auth Token)</b></p>
-                  <p style="text-indent: 30px">• Sign in and Authenticate user</p>
-                  <p style="text-indent: 15px"><b>api/events/21/register (Auth Required)</b></p>
-                  <p style="text-indent: 30px">• Register the user for an Event</p>
-                  <br>
-                  <h3><b>PUT Requests</b></h3>
-                  <p style="text-indent: 15px"><b>api/events/21 (Auth Required) (Only by Creator)</b></p>
-                  <p style="text-indent: 30px">• Update an existing Event</p>
-                  <br>
-                  <h3><b>DELETE Requests</b></h3>
-                  <p style="text-indent: 15px"><b>api/events/21 (Auth Required) (Only by Creator)</b></p>
-                  <p style="text-indent: 30px">• Delete an Event by ID</p>
-                  <p style="text-indent: 15px"><b>api/events/21/register (Auth Required)</b></p>
-                  <p style="text-indent: 30px">• Delete a registration for an Event</p>
+                  <h2><b>Tech Stack</b></h2>
+                  <p><b>Go</b> - (Golang)</p>
+                  <p><b>Gin</b> - (HTTP routing)</p>
+                  <p><b>Gin</b> - (HTTP routing)</p>
+                  <p><b>JWT</b> - Authentication</p>
+                  <p><b>bcrypt</b> - (password hashing)</p>
 
+                  <hr>
                   <br>
+                  <h2><b>Security Concepts Implemented</b></h2>
+                  <p>• Token-based authentication (JWT)</p>
+                  <p>• Password hashing and verification</p>
+                  <p>• Protected API endpoints</p>
+                  <p>• Authorization checks (resource ownership)</p>
+
+                  <hr>
                   <br>
-                  <h3><b>More detailed information on the API can be found in the ReadMe File if you click the link or images!</b></h3>
-                </div>
+                  <h2><b>What I Learned</b></h2>
+                    <p>• How authentication flows work in real systems</p>
+                    <p>• How to design and secure REST APIs</p>
+                    <p>• Handling user sessions and authorization logic</p>
+                    <p>• Building backend services in Go</p>
+
+
+
+
+
+                                </div>
                 <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/GnarlyLasagna/go-events-api">
                   Source Code
                 </a>
@@ -397,118 +383,15 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
                   <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.3" class="thumbnail rounded js-tilt">
                     <img alt="Project Image" class="img-fluid" src="/get-requests.569b6012.png">
                      <img alt="Project Image" class="img-fluid" src="/post-requests.ddaa215a.png">
-
-
-                  </div>
-
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-<!--
-         <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Tetris Game in React.Js</h3>
-                <div>
-                  <p class="mb-4">
-                  A Tetris app created with React, as a way to challenge my understanding of React hooks by creating Custom React Hooks in a game more complex than ive ever made, some of my favorite features of the game include handling collision detection and the use of 2D arrays to declare the shape of each Tetromino.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://tetris-project.netlify.app"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/GnarlyLasagna/Portfolio-projects/tree/main/tetris-app"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://tetris-project.netlify.app/" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.3"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/tetris.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-    </div>
---> 
-
-
-
-          <!-- Notice: each .row is a project -->
-<!--
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">IOS App with SwiftUI</h3>
-                <div>
-                  <p class="mb-4">
-                  A Create Read Update Delete app built in Xcode with SwiftUI, You can create lists of projects that have objectives to do within them. There are customizable priority and color options for each project. I really appreciate the way SwiftUI makes it easy to include many accessibility options into an application.
-                  </p>
-
-                </div>
-               
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://github.com/GnarlyLasagna/UltimatePortfolioApp"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://github.com/GnarlyLasagna/UltimatePortfolioApp" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.3"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/portfolioapp.png"
-                    />
                   </div>
                 </a>
               </div>
             </div>
           </div>
--->
           <!-- /END Project -->
           <!-- Notice: each .row is a project -->
-         
-          <!-- Notice: each .row is a project -->
 
-          <div class="row">
+      <!--    <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Various Websites Built By Me</h3>
@@ -519,24 +402,49 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
                   </p>
                 </div>
 
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://evan-d-designo-site.netlify.app">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://evan-d-designo-site.netlify.app"
+                >
                   See The Designo Site Live
                 </a>
                 <br><br> 
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://evan-d-feedback-app.netlify.app">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://evan-d-feedback-app.netlify.app"
+                >
                   See The Feedback App Live
                 </a>
                 <br><br> 
 
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://evan-d-kanban-task-management.netlify.app">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://evan-d-kanban-task-management.netlify.app"
+                >
                   See The Kanban Task Management Site Live
                 </a>
                 <br><br> 
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://evan-d-my-team-site.netlify.app">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://evan-d-my-team-site.netlify.app"
+                >
                   See The MyTeam Multipage Site Live
                 </a>
                 <br><br>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/GnarlyLasagna/f-e-mentor-challenges?tab=readme-ov-file#introduction">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/GnarlyLasagna/f-e-mentor-challenges?tab=readme-ov-file#introduction"
+                >
                   Link To Organized Repo of Challenges and Source Code
                 </a>
               </div>
@@ -544,14 +452,25 @@ Building a Virtualized Cybersecurity Lab: Introducing an Adversary with Kali Lin
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="https://github.com/GnarlyLasagna/f-e-mentor-challenges?tab=readme-ov-file#introduction" target="_blank">
-                  <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.3" class="thumbnail rounded js-tilt">
-                    <img alt="Project Image" class="img-fluid" src="/4proj.8f21d6ba.png">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.3"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/4proj.png"
+                    />
                   </div>
                 </a>
               </div>
             </div>
          </div>
-
+-->
+          
           <!-- Notice: each .row is a project -->
           <!-- /END Project -->
         </div>
